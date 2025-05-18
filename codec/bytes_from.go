@@ -78,7 +78,6 @@ func IntToBytes(value interface{}) (res OffsetBytes, err error) {
 	if err != nil {
 		return
 	}
-	bytes = RemoveExtraLEBytes(bytes)
 	res, err = NewBytes(bytes)
 	return
 }
